@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .duration-3000 {
+    transition-duration: 3000ms;
+  }
+}
