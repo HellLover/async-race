@@ -1,4 +1,4 @@
-## Checklist \_\_\_/400 pts
+## Checklist 240/400 pts
 
 ## 🚀 UI Deployment
 
