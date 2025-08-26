@@ -91,7 +91,7 @@ const CreateInput: FC = () => {
     };
 
     const isCreateDisabled = (data: FormData, isValid: boolean) => {
-        return !isValid;
+        return data && !isValid;
     };
 
     return (
