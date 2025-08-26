@@ -11,7 +11,7 @@ function App() {
         {/* HEADING */}
         <div className="absolute min-h-screen inset-0 -z-1 bg-[url('./src/assets/background.jpg')] bg-cover bg-center bg-no-repeat filter blur-xs grayscale-50" />
       
-        <header className="w-full md:max-w-8xl flex justify-center items-center gap-7 flex-col pb-10">
+        <header className="w-full md:max-w-8xl flex justify-center items-center gap-7 flex-col pb-10 z-10">
           <p className="font-bold text-3xl md:text-4xl lg:text-5xl text-gray-100">ASYNC RACE</p>
 
           <div className="flex items-center gap-3 flex-col md:flex-row max-w-md">
