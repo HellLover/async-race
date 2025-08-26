@@ -52,6 +52,12 @@ const Cars = () => {
     setCurrentWinner(null);
   }
 
+  if(cars.length === 0) {
+    return (
+        <span className="w-full mx-auto text-2xl text-gray-300 font-bold">No cars to display.</span>
+    )
+  }
+
   return (
     <>
       <div className="relative grid grid-cols-1 gap-4 w-full">

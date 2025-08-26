@@ -69,13 +69,13 @@ export const useRaceStore = create<RaceState>()(
       setWinnersPage: (page) => set({ currentWinnersPage: page }),
 
       fetchCars: async (page = get().currentGaragePage, limit = 7) => {
-        set({ loading: true });
-
         const data = await fetchCars(page, limit);
         if(!data.success) {
           console.log("Failed to fetch the cars.", data.message);
           return;
         }    
+
+        set({ loading: true });
 
         const navType = performance.getEntriesByType("navigation") as PerformanceNavigationTiming[];
         const wasReloaded = navType[0].type === "reload";

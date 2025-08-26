@@ -9,7 +9,7 @@ function App() {
     <>
       <div className="relative w-full min-h-screen px-4 py-10 overflow-x-hidden grid place-items-center">
         {/* HEADING */}
-        <div className="absolute min-h-screen inset-0 -z-1 bg-[url('./src/assets/background.jpg')] bg-cover bg-center bg-no-repeat filter blur-xs grayscale-50" />
+        <div className="absolute min-h-screen inset-0 -z-1 bg-[url('/background.jpg')] bg-cover bg-center bg-no-repeat filter blur-xs grayscale-50" />
       
         <header className="w-full md:max-w-8xl flex justify-center items-center gap-7 flex-col pb-10 z-10">
           <p className="font-bold text-3xl md:text-4xl lg:text-5xl text-gray-100">ASYNC RACE</p>

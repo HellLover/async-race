@@ -6,7 +6,7 @@ import { useRaceStore } from "@/store/useRaceStore";
 import DataInput from "./components/DataInput";
 
 function Garage() {
-  const { resetAll, raceAll, fetchCars, raceOnProgress } = useRaceStore();
+  const { resetAll, raceAll, fetchCars, raceOnProgress, cars } = useRaceStore();
 
   const handleGenerate = async () => {
     await generateCars(100);
@@ -21,7 +21,7 @@ function Garage() {
             <Button 
               size="sm"
               onClick={raceAll}
-              disabled={raceOnProgress}
+              disabled={raceOnProgress || !cars.length}
             >
                 <span>Race</span>
                 <Play className="w-5 h-5 ml-2" />
@@ -31,6 +31,7 @@ function Garage() {
               size="sm" 
               className="bg-red-300 hover:bg-red-300/70"
               onClick={() => resetAll()}
+              disabled={!cars.length || !raceOnProgress}
             >
                 <span>Reset</span>
                 <RotateCcw className="w-5 h-5 ml-2" />
